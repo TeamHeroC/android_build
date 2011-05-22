@@ -71,6 +71,7 @@ GRANDFATHERED_USER_MODULES += \
 	com.android.inputmethod.pinyin.lib \
 	com.android.phone.common \
 	commons-compress-1.0 \
+	copybit.msm7k \
 	copybit.qsd8k \
 	coverage \
 	cpufeatures \
@@ -124,6 +125,7 @@ GRANDFATHERED_USER_MODULES += \
 	genext2fs \
 	gps.mahimahi \
 	gralloc.default \
+	gralloc.msm7k \
 	gralloc.qsd8k \
 	groovy-all-1.7.0 \
 	grxmlcompile \
@@ -132,6 +134,9 @@ GRANDFATHERED_USER_MODULES += \
 	gzip \
 	hciattach \
 	hierarchyviewer \
+	hierarchyviewer1 \
+	hierarchyviewer2 \
+	hierarchyviewerlib \
 	hist_trace \
 	hosttestlib \
 	icudata \
@@ -151,6 +156,7 @@ GRANDFATHERED_USER_MODULES += \
 	jdwpspy \
 	jfreechart-1.0.9 \
 	jfreechart-1.0.9-swt \
+	jsilver \
 	jsr305 \
 	jsr305lib \
 	junit \
@@ -225,6 +231,7 @@ GRANDFATHERED_USER_MODULES += \
 	libGLES_android \
 	libGLESv1_CM \
 	libGLESv2 \
+	libglib \
 	libglib_static \
 	libgui \
 	libhardware \
@@ -353,6 +360,7 @@ GRANDFATHERED_USER_MODULES += \
 	libxml2 \
 	libzipfile \
 	lights.kraken \
+	lights.msm7k \
 	lights.qsd8k \
 	line_endings \
 	linker \
@@ -378,10 +386,12 @@ GRANDFATHERED_USER_MODULES += \
 	mkyaffs2image \
 	monkey \
 	monkeyrunner \
+	MonkeyRunnerTest \
 	mtpd \
 	ndc \
 	netcfg \
 	netd \
+	network \
 	ninepatch \
 	oauth \
 	obbtool \
@@ -459,6 +469,7 @@ GRANDFATHERED_USER_MODULES += \
 	test-progress-new \
 	test_swiarb \
 	test_zipfile \
+	tiwlan.ini \
 	toolbox \
 	traceview \
 	tuttle2.kcm \
@@ -467,6 +478,7 @@ GRANDFATHERED_USER_MODULES += \
 	vdc \
 	vm-tests \
 	vold \
+	wlan_loader \
 	wdsclient \
 	wpa_supplicant \
 	wpa_supplicant.conf \
