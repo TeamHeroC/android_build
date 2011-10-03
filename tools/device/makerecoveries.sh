@@ -30,7 +30,7 @@ function mcpguard () {
     fi
 }
 
-VERSION=$(cat bootable/recovery/Android.mk | grep RECOVERY_VERSION | grep ClockworkMod | sed s/'RECOVERY_VERSION := ClockworkMod Recovery v'//g)
+VERSION=$(cat bootable/recovery/Android.mk | grep RECOVERY_VERSION | grep RECOVERY_NAME | awk '{ print $4 }' | sed s/v//g)
 echo Recovery Version: $VERSION
 
 for lunchoption in $PRODUCTS
@@ -54,15 +54,12 @@ do
     mcpguard $OUT/recovery.img recoveries/recovery-clockwork-$VERSION-$DEVICE_NAME.img
     mcpguard $OUT/utilities/update.zip recoveries/recovery-clockwork-$VERSION-$DEVICE_NAME.zip
     
-	if [ -f "ROMManagerManifest/devices.rb" ]
-	then
-		for device in $ALL_DEVICES
-		do
-			pushd ROMManagerManifest
-			ruby devices.rb $device $VERSION
-			popd
-		done
-	fi
+    if [ -f "ROMManagerManifest/devices.rb" ]
+    then
+        pushd ROMManagerManifest
+        ruby devices.rb $DEVICE_NAME $VERSION $lunchoption
+        popd
+    fi
 done
 
 for published_recovery in $PUBLISHED_RECOVERIES
