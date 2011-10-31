@@ -82,6 +82,7 @@ FRAMEWORKS_BASE_SUBDIRS := \
 	    graphics \
 	    location \
 	    media \
+	    omapmmlib \
 	    opengl \
 	    sax \
 	    telephony \
